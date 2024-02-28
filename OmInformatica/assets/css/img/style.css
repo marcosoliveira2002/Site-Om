@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+
+}
+body {
+    background-color:#24252a;
+}
+
+header {
+    background-color:#1c1d1f;
+    
+
+}
+
+.FixoNoTopo{
+    position: fixed  ;
+    top: 0px;
+    width: 100%;
+}
+
+.FixoNoTopo + .capa  {
+    margin-top: 30px;
+    margin: 70px 0px;
+    width: 100%;
+    height: 50vh;
+    
+    
+}
+
+
+#nav-bar + .capa {
+    height: 69vh;  
+}
+
+#nav-bar {
+    
+    background-color:#1c1d1f;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.logo {
+    padding-left: 0;
+    margin: 10px ;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+
+}
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+.nav-item {
+    transition: all.9s;
+    margin: 0px 15px;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 1.25rem;
+    color: orange;
+    font-weight: bold;
+}
+
+.nav-list a:hover{
+    
+    color: white;
+    transition: all .6S;
+
+    
+    
+} 
+
+
+
+.login-button a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    border-radius: 7px;
+    margin: auto;
+   
+
+}
+
+.login-button a:hover{
+    color: orange;
+    background-color: white;
+    transition: .6s;
+}
+
+
+.mobile-menu-icon {
+    display: none;
+
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.sup{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    display: flex;
+}
+
+    
+
+
+/***************************CELULAR***************************/
+@media screen and (max-width: 768px) {
+    #nav-bar {
+        display: block !important;
+        padding: 0;
+
+    }
+
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+
+.flex {
+    display: flex !important;
+}    
+    
+
+.mobile-menu-icon  button{
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 1s;
+    
+}
+.mobile-menu ul {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+}
+
+.mobile-menu .nav-item {
+display: block;
+padding-top: 1.2rem;
+
+
+}
+
+
+.logo{
+    margin: auto;
+    float: right;
+}
+
+.servico-texto-realce {
+    font-size: 1rem;
+}
+
+.mobile-menu .login-button a {
+   
+   align-items: center;
+   text-align: center;
+   padding: .52rem 7.7rem;
+}
+
+.mobile-menu .login-button {
+    display: block !important;
+    padding: 1rem 2rem;
+    text-align: center;
+    
+    
+    
+
+}
+
+
+
+.open {
+    display: block !important;
+}
+
+   
+
+
+.mapa{
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin: .3em ;
+}
+
+.map-box {
+    display:flex !important;
+    flex-direction: column !important;
+    margin-top: 0;
+     
+    width: 300px !important;
+    height: 200px !important;
+    background: #fff;
+ 
+ }
+
+ .map-box iframe {
+    display:flex !important;
+    flex-direction: column !important;
+    width: 100%;
+    height: 100%;
+}
+
+.contatos {display: none !important;}
+#cotatos-localizacao{display: block;}
+.contatos-mobile {
+    display:flex !important;
+    flex-direction: column;
+    background-color:transparent;
+    margin: 0;
+    padding: 0;
+
+}
+.contatos-textos-mobile{
+    
+   
+    display: flex !important;
+    order: 2;
+    flex-direction: column;
+   background-color:transparent;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    max-width: 100%;
+    
+    
+
+}
+
+.contatos-textos-mobile h1 {
+    font-size: 1.7rem;
+}
+
+.dowloads{
+    display: none !important;
+}
+.container-texto {
+    display: none !important;
+}
+
+.capa {
+    
+    flex-direction: column;
+    width: 100%;
+}
+
+#disclaimer {
+    padding: 2em;
+}
+#disclaimer p {
+    font-size: 1.2rem !important;
+    margin-bottom: .5em;
+}
+
+.software {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+}
+
+.softwareom {
+    max-width: 70% !important;
+    margin-bottom: 2em;
+}
+
+.sistema {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+}
+
+.sistema img {
+    width: 100% !important;
+    margin: 2em 0;   
+}
+
+#sistema-1 img {
+    display: none !important;
+}
+
+#sistema-1 h3 {
+    font-size: 2.0rem !important;
+}
+
+
+.descricao-sistema {
+    padding:0 ;    
+}
+
+#dowloads-navegacao-mobile {
+    display: flex !important;
+}
+.dowloads-mobile {
+    display: flex !important;
+    gap: 5px;
+}
+
+.dowloads-android {
+    display: block !important;
+}
+
+#clientes {
+    display: block !important;
+    text-align: center;
+    width: 50% !important;
+    
+    
+}
+
+.qntd-clientes{
+    padding: 0 !important;
+    margin: 10px !important;
+    font-weight: 400 !important;
+    background-color: orange;
+    font-size: 1.2rem !important;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #fcfcfc1f;
+    
+}
+
+.estados-clientes{
+    padding: 0 !important;
+    margin: 10px !important;
+    font-weight: 400 !important;
+    background-color: orange;
+    font-size: 1.2rem !important;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #fcfcfc15;
+    
+}
+
+.tempo-clientes{
+    padding: 0 !important;
+    margin: 10px !important;
+    font-weight: 400 !important;
+    background-color: orange;
+    font-size: 1.2rem !important;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #fcfcfc15;
+    
+}
+
+}
+
+
+
+
+/**************************INICIO CAPA*************************/
+.capa{
+    position: static;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8) ),
+    url(img/Design\ sem\ nome\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.sobreom{
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    width: 25vw;
+    color: white;
+    font-size: 1.5rem; 
+}
+
+.sobreom1{
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 3px;
+    
+    background-color:  rgba(255, 123, 0, 0.637); 
+    justify-content: center;
+    text-align: center; 
+    color: white;
+    font-size: 1.7rem;
+    padding: 4px;
+}
+
+
+
+    /****CONTEUDO DO CONTATOS****/    
+#cotatos-localizacao{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,.8) ),
+    url(img/ombackground.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;    
+    justify-content: space-around;
+
+}
+
+.contatos {
+    
+    background-color: transparent;
+    overflow: auto;
+}
+.contatos-textos {
+    
+    
+    float: center;
+    margin: 60px auto;
+    width: 60%;
+    padding: 50px; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+.servico-texto-realce{ /***SPAN****/
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+} 
+
+.contatos-textos p {
+    line-height: 1.5em;
+    max-width: 100%;
+    margin-top: 20px;
+    color:white;
+    font-size: 1.2rem;
+
+}
+
+/*****************GOOGLE MAPS*********************/
+.mapa{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background:transparent;
+}
+
+.map-box {
+    
+   display: flex; 
+   width: 500px ;
+   height: 400px ;
+   background: #fff;
+   margin-bottom:50px ;
+}
+
+.map-box iframe {
+    
+    width: 100%;
+    height: 100%;
+}
+
+/*************************SUPORTE*************************/
+
+
+
+
+
+
+
+.dowloads { 
+    display: block;
+
+    color: white;
+    display: flex;
+    background-color: #24252a;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dowloads1 a p { 
+    width: 100px;
+    text-decoration: none;
+    margin: 5px 50px;  
+    color: white;
+    font-size: 1.1em;
+    
+}   
+
+.dowloads1 a img {
+     
+
+    
+    margin: 50px;
+    width: 12vw;
+    height: 10vw;
+}
+.dowloads1 a img:hover {  
+    transform:scale(1.05)   ;
+}
+
+/***************************** INICIO****************************/
+
+.titulo {
+   
+    overflow: auto;
+    
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #1c1d1f;
+}
+
+
+
+
+@media screen and (max-width: 938px) {
+    
+        
+    
+    
+
+}
+
+#key-software h2 {
+margin-top: 0;
+text-align: center;
+padding: .5em;
+font-size: 1.7rem;
+font-weight: bold;
+color: white;
+}
+
+.software {
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+    width: 100%;
+    margin:  auto;
+}
+
+
+
+
+.softwareom {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    color: white;
+    font-size: 1,6rem;
+}
+
+
+
+.softwareom .software-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom:  2em;
+}
+
+#software-1{
+    background-image:url(../css/img/equipetecnica.png) ;
+    
+}
+#software-2{
+    background-image:url(../css/img/sistema\ om.png) ;
+}
+
+#software-3{
+    background-image:url(../css/img/suporte.png) ;
+}
+
+/**********************RODAPE**********************/
+
+.rodape{
+    
+    text-align: center;
+    padding: 80px;
+    background-color:  #1c1d1f;
+    color: wheat;
+    height: 250px;
+}
+
+/*******************DISPLAY PARA MOBILES*******************/
+
+.contatos-mobile {
+    display: none;
+    flex-direction: column;
+}
+#dowloads-navegacao-mobile {
+    display: none;
+}
+.dowloads-android{
+display: none;
+}
+
+
+
+/**************MAIS UM POUCO SOBRE O SOFTWARE****************/
+#sistemas {
+    width: 80%;
+    margin: 0  auto;
+}
+
+.sistema{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4e, ;
+    margin-top: 20px;
+}
+
+.sistema img {
+    width: 46%;
+
+}
+.sistema h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+    color:orange;
+}
+
+#sistema-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+
+}
+.descricao-sistema {
+    width: 100%;
+    padding-left: 2em;
+    
+}
+
+.descricao-sistema ul{ 
+list-style-position:inside ;
+color: white;
+font-size: 1.1rem;
+}
+.descricao-sistema ul li{
+    list-style: circle;
+    margin-bottom: 0.4em ;
+}
+.descricao-sistema ul li:last-child{
+    font-weight: bold;
+}
+
+.descricao-sistema p {
+    margin-bottom: 0.7em ;
+    color: white;
+    font-weight: 500;
+}
+
+/****************** SUPORTE**********************/
+
+.container-texto {
+    
+    text-align: center;
+}
+
+.container-texto p {
+    
+    color: white;
+    
+}
+
+.container-texto-mobile {
+    
+    text-align: center;
+}
+
+.container-texto-mobile p {
+    
+    color: white;
+    
+}
+
+.dowloads-mobile { 
+    display: block;
+
+    color: white;
+    display: flex;
+    background-color: #24252a;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dowloads-android a p { 
+    width: 100px;
+    text-decoration: none;
+    margin: 5px 50px;  
+    color: white;
+    font-size: 1.1em;
+    
+}   
+
+.dowloads-android a img {
+     
+
+    
+    margin: 50px;
+    width: 12vw;
+    height: 10vw;
+}
+.dowloads-android a img:hover {  
+    transform:scale(1.05)   ;
+}
+
+/******CLIENTES******/
+#clientes {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center !important;
+    width: 60%;
+    margin:  auto;
+}
+
+#clientes img {
+    width: 50px;
+    width: 50px;
+}
+
+.qntd-clientes {
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 530;
+    background-color: orange;
+    font-size: 1.5rem;
+    color: black;
+    padding: 50px;
+    border-radius: 10px;
+    font-weight: bolder;
+    
+    
+}
+
+.estados-clientes {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 530;
+    background-color: orange;
+    font-size: 1.5rem;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+    font-weight: bolder;
+    
+}
+
+.tempo-clientes {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 530;
+    background-color: orange;
+    font-size: 1.5rem;
+    color: black;
+    padding: 55px;
+    border-radius: 10px;
+    font-weight: bolder;
+    
+}
+
+.texto-realce-clientes{
+    font-weight: bold;
+    color: white;
+    
+}
